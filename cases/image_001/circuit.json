@@ -1,0 +1,933 @@
+{
+  "library": "CircuitImageTests",
+  "cell": "image_001",
+  "devices": [
+    {
+      "name": "Q1",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        278,
+        167
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "N3",
+        "B": "N2",
+        "E": "E1"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q2",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        343,
+        167
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "N4",
+        "B": "N2",
+        "E": "E2"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q3",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        493,
+        167
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "N5",
+        "B": "N2",
+        "E": "E3"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q4",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        780,
+        167
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "N6",
+        "B": "N3",
+        "E": "E4"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q5",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        278,
+        576
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "N2",
+        "B": "N4",
+        "E": "E5"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "Q6",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        334,
+        576
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "N7",
+        "B": "N4",
+        "E": "E6"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "Q7",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        363,
+        576
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "N8",
+        "B": "N4",
+        "E": "Vout"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "Q8",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        414,
+        511
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "Vout",
+        "B": "N8",
+        "E": "N5"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q9",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        493,
+        511
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "N9",
+        "B": "N8",
+        "E": "E9"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "Q10",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        560,
+        465
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "N10",
+        "B": "N9",
+        "E": "N5"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q11",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        625,
+        611
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "N11",
+        "B": "N10",
+        "E": "Vout"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "Q12",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        740,
+        465
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "Vout",
+        "B": "N12",
+        "E": "N11"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q13",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        782,
+        424
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "Vin",
+        "B": "N6",
+        "E": "N12"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "Q14",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        860,
+        494
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "Vout",
+        "B": "N13",
+        "E": "N6"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q15",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        940,
+        378
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "N13",
+        "B": "N14",
+        "E": "N11"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q16",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        966,
+        378
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "N14",
+        "B": "N14",
+        "E": "N11"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q17",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        1006,
+        167
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "N7",
+        "B": "N7",
+        "E": "E17"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q18",
+      "lib": "analogLib",
+      "cell": "pnp",
+      "xy": [
+        1039,
+        167
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "N11",
+        "B": "N7",
+        "E": "E18"
+      },
+      "params": {
+        "model": "UNSPECIFIED_PNP"
+      }
+    },
+    {
+      "name": "Q19",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        1104,
+        308
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "Vin",
+        "B": "N11",
+        "E": "N15"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "Q20",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        1205,
+        395
+      ],
+      "orient": "R0",
+      "terms": {
+        "C": "Vin",
+        "B": "N15",
+        "E": "N16"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "Q21",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        1118,
+        531
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "N11",
+        "B": "N17",
+        "E": "E21"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "Q22",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        992,
+        750
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "N13",
+        "B": "Vout",
+        "E": "N18"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "Q23",
+      "lib": "analogLib",
+      "cell": "npn",
+      "xy": [
+        1046,
+        750
+      ],
+      "orient": "MY",
+      "terms": {
+        "C": "N14",
+        "B": "Vout",
+        "E": "E23"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NPN"
+      }
+    },
+    {
+      "name": "J1",
+      "lib": "analogLib",
+      "cell": "njfet",
+      "xy": [
+        98,
+        421
+      ],
+      "orient": "R0",
+      "terms": {
+        "D": "Vin",
+        "G": "Vout",
+        "S": "N1"
+      },
+      "params": {
+        "model": "UNSPECIFIED_NJFET"
+      }
+    },
+    {
+      "name": "R1",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        238,
+        80
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "Vin",
+        "MINUS": "E1"
+      },
+      "params": {
+        "r": "300"
+      }
+    },
+    {
+      "name": "R2",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        383,
+        80
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "Vin",
+        "MINUS": "E2"
+      },
+      "params": {
+        "r": "300"
+      }
+    },
+    {
+      "name": "R3",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        533,
+        80
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "Vin",
+        "MINUS": "E3"
+      },
+      "params": {
+        "r": "300"
+      }
+    },
+    {
+      "name": "R4",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        820,
+        80
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "Vin",
+        "MINUS": "E4"
+      },
+      "params": {
+        "r": "3k"
+      }
+    },
+    {
+      "name": "R5",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        966,
+        80
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "Vin",
+        "MINUS": "E17"
+      },
+      "params": {
+        "r": "300"
+      }
+    },
+    {
+      "name": "R6",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        1077,
+        80
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "Vin",
+        "MINUS": "E18"
+      },
+      "params": {
+        "r": "70"
+      }
+    },
+    {
+      "name": "R7",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        238,
+        225
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "N3",
+        "MINUS": "N2"
+      },
+      "params": {
+        "r": "350"
+      }
+    },
+    {
+      "name": "R8",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        165,
+        576
+      ],
+      "orient": "R90",
+      "terms": {
+        "PLUS": "N1",
+        "MINUS": "N4"
+      },
+      "params": {
+        "r": "200k"
+      }
+    },
+    {
+      "name": "R9",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        238,
+        640
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "E5",
+        "MINUS": "Vout"
+      },
+      "params": {
+        "r": "180"
+      }
+    },
+    {
+      "name": "R10",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        294,
+        640
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "E6",
+        "MINUS": "Vout"
+      },
+      "params": {
+        "r": "180"
+      }
+    },
+    {
+      "name": "R11",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        383,
+        450
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "N4",
+        "MINUS": "N8"
+      },
+      "params": {
+        "r": "130"
+      }
+    },
+    {
+      "name": "R12",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        533,
+        415
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "N5",
+        "MINUS": "N9"
+      },
+      "params": {
+        "r": "8.67k"
+      }
+    },
+    {
+      "name": "R13",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        533,
+        650
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "E9",
+        "MINUS": "Vout"
+      },
+      "params": {
+        "r": "2k"
+      }
+    },
+    {
+      "name": "R14",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        600,
+        650
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "N10",
+        "MINUS": "Vout"
+      },
+      "params": {
+        "r": "6k"
+      }
+    },
+    {
+      "name": "R15",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        741,
+        520
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "N12",
+        "MINUS": "N16"
+      },
+      "params": {
+        "r": "5.1k"
+      }
+    },
+    {
+      "name": "R16",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        1143,
+        435
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "N15",
+        "MINUS": "N16"
+      },
+      "params": {
+        "r": "500"
+      }
+    },
+    {
+      "name": "R17",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        1187,
+        531
+      ],
+      "orient": "R90",
+      "terms": {
+        "PLUS": "N17",
+        "MINUS": "N16"
+      },
+      "params": {
+        "r": "400"
+      }
+    },
+    {
+      "name": "R18",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        1077,
+        650
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "E21",
+        "MINUS": "Vout"
+      },
+      "params": {
+        "r": "60"
+      }
+    },
+    {
+      "name": "R19",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        1244,
+        650
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "N16",
+        "MINUS": "Vout"
+      },
+      "params": {
+        "r": "2.5"
+      }
+    },
+    {
+      "name": "R20",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        1007,
+        793
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "E23",
+        "MINUS": "N18"
+      },
+      "params": {
+        "r": "2.4k"
+      }
+    },
+    {
+      "name": "R21",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        1065,
+        844
+      ],
+      "orient": "R90",
+      "terms": {
+        "PLUS": "N18",
+        "MINUS": "N19"
+      },
+      "params": {
+        "r": "12.8k"
+      }
+    },
+    {
+      "name": "R22",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        1175,
+        844
+      ],
+      "orient": "R90",
+      "terms": {
+        "PLUS": "N19",
+        "MINUS": "Adjust"
+      },
+      "params": {
+        "r": "50"
+      }
+    },
+    {
+      "name": "R23",
+      "lib": "analogLib",
+      "cell": "res",
+      "xy": [
+        1317,
+        255
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "N21",
+        "MINUS": "N17"
+      },
+      "params": {
+        "r": "18k"
+      }
+    },
+    {
+      "name": "Z1",
+      "lib": "analogLib",
+      "cell": "zener",
+      "xy": [
+        124,
+        635
+      ],
+      "orient": "R0",
+      "terms": {
+        "MINUS": "N1",
+        "PLUS": "Vout"
+      },
+      "params": {
+        "model": "UNSPECIFIED_ZENER_6p3",
+        "sourceNominalBreakdown": "6.3V"
+      }
+    },
+    {
+      "name": "Z2",
+      "lib": "analogLib",
+      "cell": "zener",
+      "xy": [
+        1317,
+        73
+      ],
+      "orient": "R0",
+      "terms": {
+        "MINUS": "Vin",
+        "PLUS": "N20"
+      },
+      "params": {
+        "model": "UNSPECIFIED_ZENER_6p8",
+        "sourceNominalBreakdown": "6.8V"
+      }
+    },
+    {
+      "name": "Z3",
+      "lib": "analogLib",
+      "cell": "zener",
+      "xy": [
+        1317,
+        145
+      ],
+      "orient": "R0",
+      "terms": {
+        "MINUS": "N20",
+        "PLUS": "N21"
+      },
+      "params": {
+        "model": "UNSPECIFIED_ZENER_6p8",
+        "sourceNominalBreakdown": "6.8V"
+      }
+    },
+    {
+      "name": "C1",
+      "lib": "analogLib",
+      "cell": "cap",
+      "xy": [
+        859,
+        625
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "N13",
+        "MINUS": "Vout"
+      },
+      "params": {
+        "c": "10p"
+      }
+    },
+    {
+      "name": "C2",
+      "lib": "analogLib",
+      "cell": "cap",
+      "xy": [
+        905,
+        657
+      ],
+      "orient": "R0",
+      "terms": {
+        "PLUS": "N13",
+        "MINUS": "N19"
+      },
+      "params": {
+        "c": "10p"
+      }
+    }
+  ],
+  "ports": [
+    "Vin",
+    "Vout",
+    "Adjust"
+  ],
+  "source": "User supplied schematic image; source.png",
+  "sourceCrossCheck": "https://www.onsemi.com/pdf/datasheet/lm317m-d.pdf, Figure 2 (different sense resistor)",
+  "assumptions": [
+    "BJT/JFET model names and emitter area ratios are unspecified in the source.",
+    "R19 is 2.5 ohm per supplied image, not the 1.25 ohm of LM317M Figure 2.",
+    "Vout is the floating internal reference rail; it is not ground.",
+    "C2 returns to N19 (before the 50 ohm Adjust resistor), not Vout.",
+    "R15 (5.1k) returns to N16 (pass emitter, before 2.5 ohm), not Vout.",
+    "Every net uses continuous physical wires; crossovers without a junction remain separate.",
+    "No semiconductor models, area ratios, external divider, load, or simulation results supplied."
+  ]
+}

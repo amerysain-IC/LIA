@@ -1,0 +1,26 @@
+const assert=require('node:assert/strict');
+const edit=require('../web/device-edit.js');
+const device=(name,kind='nmos',cell='nmos4',model='edu_n',w='20u')=>({name,kind,lib:'analogLib',cell,params:{w,l:'1u',model},editable:['w','l']});
+const devices=[device('M1'),device('M2','nmos','nmos4','edu_n','30u'),device('M3','pmos','pmos4','edu_p'),device('M4','nmos','nmos4','other_model'),{name:'CC',kind:'capacitor',lib:'analogLib',cell:'cap',params:{c:'2p'},editable:['c']},{name:'Q0',kind:'npn',lib:'pdk',cell:'npn',params:{w:'3u',l:'3u'},editable:[]}];
+const original=JSON.stringify(devices);
+assert.deepEqual(edit.plan(devices,'M1',['M1','M2'],'current','w').targets,['M1']);
+assert.deepEqual(edit.plan(devices,'M1',['M1','M2','M3','CC','Q0'],'selected','w'),{targets:['M1','M2','M3'],skipped:['CC','Q0']});
+assert.deepEqual(edit.plan(devices,'M1',[],'all','w').targets,['M1','M2']);
+assert.deepEqual(edit.plan(devices,'M3',[],'all','w').targets,['M3']);
+let result=edit.apply(devices,{M2:{l:'2u'}},'M1',['M1','M2','CC'],'selected','w','30u');
+assert.deepEqual(result.changes,{M1:{w:'30u'},M2:{l:'2u'}}); // Each target uses its own original value.
+assert.deepEqual(result.skipped,['CC']);
+assert.equal(JSON.stringify(devices),original);
+assert.deepEqual(edit.apply(devices,result.changes,'M1',['M1'],'current','w','20u').changes,{M2:{l:'2u'}});
+for(const invalid of ['NaN','Infinity','1u;model x','0','-2u','3000u'])assert.throws(()=>edit.apply(devices,result.changes,'M1',['M1','M2'],'selected','w',invalid));
+assert.throws(()=>edit.apply(devices,result.changes,'M1',['M1'],'selected','model','2u'));
+assert.throws(()=>edit.apply(devices,{},'Q0',['Q0'],'current','w','5u'));
+assert.equal(JSON.stringify(devices),original);
+assert.deepEqual(edit.toggle(['M1','M2'],'M1'),['M2']);
+assert.deepEqual(edit.toggle(['M1'],'M2'),['M1','M2']);
+assert(edit.intersects({x:0,y:0,width:10,height:10},{x:9,y:9,width:4,height:4}));
+assert(!edit.intersects({x:0,y:0,width:10,height:10},{x:11,y:0,width:4,height:4}));
+assert(!edit.apply(devices,{},'M1',['M1'],'current','w','20u').changed);
+const many=Array.from({length:201},(_,i)=>device('N'+i));
+assert.throws(()=>edit.apply(many,{},'N0',many.map(d=>d.name),'all','w','50u'),/200/);
+console.log('Device edit contracts passed: three scopes, mixed selection, atomic validation, original-value normalization, selection and topology isolation.');

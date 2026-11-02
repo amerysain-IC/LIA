@@ -1,0 +1,2 @@
+# Pin the bridge API used by this preview to a verified upstream revision.
+virtuoso-bridge @ git+https://github.com/Arcadia-1/virtuoso-bridge-lite.git@17883ca35d14df108f46ebeb5c2ea9d70ee08acf
